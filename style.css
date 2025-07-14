@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(14px, 1vw + 8px, 18px);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Navigation */
+#nav {
+  width: 100%;
+  position: fixed;
+}
+
+#nav #reddion {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(23, 114, 251, 1) 0%, rgba(88, 83, 246, 1) 50%, rgba(125, 64, 242, 1) 100%);
+  color: white;
+}
+
+#nav #mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 4rem;
+  background-color: white;
+}
+
+#nav #mainNav #navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+#nav #mainNav #navLink h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#nav #mainNav #navLink i {
+  font-size: 1.2rem;
+}
+
+#nav #mainNav img {
+  width: 6vw;
+  height: 6vh;
+}
+
+#nav #mainNav #button {
+  padding: 0.8rem 1rem;
+  background-color: #0468d7;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Main Layout */
+#main {
+  width: 100%;
+}
+
+#page1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(247, 236, 243, 1) 0%, rgba(243, 252, 255, 1) 50%, rgba(243, 252, 255, 1) 100%);
+}
+
+#page1 #left {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+#page1 #right {
+  width: 35%;
+  height: 55%;
+  background-image: url("https://storage.googleapis.com/cms-storage-bucket/strong-ecosystem-open-source.7c6e6c7e94f4f0689ae0.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#page2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+#section .col {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-top: 6px solid #E8EAED;
+}
+
+#section .col #text {
+  width: 100%;
+  padding: 1rem 4rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#section .col #text h3 {
+  font-weight: 500;
+}
+
+#section .col #img {
+  width: 100%;
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#section .col:nth-child(1) #img {
+  background-image: url("https://storage.googleapis.com/cms-storage-bucket/community.e90928160cc43359f8f6.jpg");
+}
+
+#section .col:nth-child(2) #img {
+  background-image: url("https://storage.googleapis.com/cms-storage-bucket/events.bb151b932844205ac418.jpg");
+}
+
+#section .col:nth-child(3) #img {
+  background-image: url("https://storage.googleapis.com/cms-storage-bucket/packages.aa60c7e0fff5f6fdbda7.png");
+}
+
+#page3 {
+  width: 100vw;
+}
+
+
+
+.main2,
+.main3,
+.main4,
+.main5,
+.main6,
+.main7 {
+  padding: 1rem;
+}
+
+.main2 .container,
+.main3 .container,
+.main4 .container,
+.main5 .container,
+.main6 .container,
+.main7 .container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main2 .cards,
+.main3 .text,
+.main4 .text,
+.main5 .text,
+.main6 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main2 .cards h3 {
+  font-size: 2rem;
+}
+
+.main2 .cards hr {
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.295);
+  border: none;
+}
+
+.main2 .cards p,
+.main3 .text p,
+.main4 .text p,
+.main5 .text p,
+.main6 .text p {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.main3 .text h3,
+.main4 .text h3,
+.main5 .text h3,
+.main6 .text h3 {
+  color: rgb(63, 62, 62);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main3 .text h1,
+.main4 .text h1,
+.main5 .text h1,
+.main6 .text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.main3 .text button,
+.main4 .text button,
+.main5 .text button,
+.main6 .text button {
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(2, 125, 253);
+  color: rgb(2, 125, 253);
+}
+
+.main4,
+.main6 {
+  background: linear-gradient(35deg, rgb(252, 252, 226) 40%, rgb(245, 251, 254) 90%);
+}
+
+.main4 .text button,
+.main6 .text button {
+  background-color: rgb(2, 125, 253);
+  color: white;
+}
+
+.main7 .container {
+  background-image: url("https://storage.googleapis.com/cms-storage-bucket/get-started-background.72521e62275b24d3c37d.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #042449;
+  border-radius: 2rem;
+  color: white;
+  padding: 6rem 3rem;
+}
+
+.main7 .container h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.main7 .container p {
+  font-size: 1.4rem;
+}
+
+.main7 .btn-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main7 .btn-container .first,
+.main7 .btn-container .second {
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.main7 .btn-container .first {
+  color: #027dfd;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.main7 .btn-container .second {
+  color: white;
+}
+
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .icons i {
+  color: gray;
+  font-size: 2rem;
+}
+
+footer .terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer .terms p {
+  text-align: center;
+}
+
+footer .terms span {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  #nav #mainNav {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  #nav #mainNav img {
+    width: 25vw;
+    height: auto;
+  }
+
+  #page1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #page1 #left,
+  #page1 #right {
+    width: 90%;
+    height: auto;
+  }
+
+  #page1 #left {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  #section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #section .col {
+    width: 90%;
+    height: auto;
+  }
+
+  .main2 .container,
+  .main3 .container,
+  .main4 .container,
+  .main5 .container,
+  .main6 .container,
+  .main7 .container {
+    padding: 2rem;
+  }
+
+  .main7 .btn-container {
+    flex-direction: column;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .terms {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .terms span {
+    flex-direction: column;
+  }
+}
